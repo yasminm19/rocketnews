@@ -1,0 +1,143 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  width: 389px;
+  height: 94px;
+  margin-top: 50px;
+  margin-left: 30px;
+  align-items: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+  margin-top: 92px;
+  gap: 9px;
+}
+
+.title {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #08c05e;
+}
+
+.subtitle {
+  font-family: 'Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+form {
+  display: grid;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 36px;
+  color: var(--text-color);
+  margin-top: 50px;
+  position: relative;
+}
+
+input {
+  width: 750px;
+  height: 47px;
+  outline: none;
+  border-left: 3px solid #04d361;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+
+  z-index: 1;
+}
+label {
+  font-family: 'Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+
+button {
+  width: 48px;
+  height: 48px;
+  background-color: var(--bg-button-color);
+  border: none;
+  z-index: 1;
+}
+.input {
+  display: flex;
+  align-items: center;
+}
+.info {
+  display: flex;
+  margin-left: 36px;
+  margin-top: 52px;
+}
+
+.info a {
+  font-family: 'Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 138.73%;
+  text-decoration: none;
+  color: var(--bg-button-color);
+}
+
+a > img {
+  vertical-align: middle;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+.image {
+  background-image: url(./assets/foto2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+
+  position: absolute;
+  top: 0;
+  margin-left: 50%;
+  width: 50%;
+  height: 100vh;
+}
